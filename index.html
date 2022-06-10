@@ -1,11 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta charset="UTF-8">-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>
+            Valentina Zagrebina
+        </h1>
+
+        <h2 class="header-h2">сurriculum vitae</h2>
+
+        <img src="me.jpg" alt="My photo" height="300">
+
+        <nav>
+            <ul>
+                <li class="nav-header-item">
+                    <a href="#About-me">About me</a>
+                </li>
+
+                <li class="nav-header-item">
+                    <a href="#Contacts">Contacts</a>
+                </li>
+
+                <li class="nav-header-item">
+                    <a href="#Skills">Skills</a>
+                </li>
+
+                <li class="nav-header-item">
+                    <a href="#Code-examples">Code examples</a>
+                </li>
+
+                <li class="nav-header-item">
+                    <a href="#My-projects">My projects</a>
+                </li>
+
+                <li class="nav-header-item">
+                    <a href="#Education">Education</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="About-me">
+            <h2>
+                About me 
+            </h2>
+
+            <p>I am from Russia, I live in Izhevsk. I want to become a web developer.</p>
+        </section>
+
+        <section id="Contacts">
+            <h2>
+                Contacts
+            </h2>
+
+            <div>
+                <ul>
+                    <li>
+                        Phone: +7 919 908 5976
+                    </li>
+
+                    <li>
+                        E-mail: chernikovave1993@gmail.com
+                    </li>
+
+                    <li>
+                        Discord: @Valentain1993
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <h2>
+                Skills
+            </h2>
+
+            <ul>
+                <li>
+                    HTML
+                </li>
+
+                <li>
+                    CSS
+                </li>
+
+                <li>
+                    А little JS :)
+                </li>
+            </ul>
+        </section>
+
+        <section id="Code-examples">
+            <h2>
+                Code examples
+            </h2>
+
+            <pre>
+                <code>
+                function showModal() {
+                    let modalId = this.dataset.modal;
+                    document.querySelector(modalId).classList.remove('hide-wrap');
+                    event.stopPropagation();
+                
+                    document.onkeydown = function (event) {
+                        //закрываем окно на кнопку Esc
+                        if (event.keyCode == 27) closeModal();
+                    }
+                }
+            </code>
+        </pre>
+
+        </section>
+
+        <section id="My-projects">
+            <h2>
+                My projects
+            </h2>
+
+            <ul>
+                <li>
+                    <a href='https://github.com/Valentain1993/videoservis_pro'>Это проект 1</a>
+                </li>
+
+                <li>
+                    <a href='https://github.com/Valentain1993/airplanet_2'>Это проект 2</a>
+                </li>
+
+                <li>
+                    <a href='https://github.com/Valentain1993/vibor.pro'>Это проект 3</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Education">
+            <h2>
+                Education
+            </h2>
+
+            <ul>
+                <li>
+                    High-school education
+                </li>
+
+                <li>
+                    English A1
+                </li>
+
+                <li>
+                    Deutsch A2
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://github.com/Valentain1993">My account GitHub</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0">
+                        <img src="logo-rs.svg" alt="Логотип RS School" width="15">
+                        <span>Создано по учебной программе RS School</span>
+                    </a>
+                </li>
+
+                <li>
+                    Year of creation 2022
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
